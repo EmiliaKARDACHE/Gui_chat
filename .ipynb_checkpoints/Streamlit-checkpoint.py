@@ -1,38 +1,39 @@
 import streamlit as st
-
-# --- Style CSS ---
 st.markdown("""
     <style>
-        /* Fond blanc */
-        .block-container {
-            background-color: white !important;
-        }
-
-        /* Titres en rouge */
         h1, h2, h3, h4, h5, h6 {
-            color: #B00020 !important;
+            color: #c2185b !important;
         }
 
-        /* Texte normal en noir */
-        body, p, label, span, div, input, .stMarkdown {
-            color: #000000 !important;
-        } 
+        label, p, span, .stTextInput, .stSelectbox, .stRadio {
+            color: #d63384 !important;
+        }
 
-        /* Boutons personnalisés */
-        button {
-            background-color: white !important;
-            color: #000000 !important;
-            border: 1px solid #B00020 !important;
-            border-radius: 8px !important;
+        .css-1cpxqw2, .css-10trblm, .css-1v0mbdj {
+            color: #d63384 !important;
+        }
+
+        .stButton>button {
+            background-color: #f06292; 
+            color: white;
             font-weight: bold;
+            border-radius: 12px;
         }
 
-        button:hover {
-            background-color: #B00020 !important;
-            color: white !important;
+        .stButton>button:hover {
+            background-color: #e91e63;
+        }
+
+        .stTextInput>div>input {
+            color: #000000 !important;
+        }
+
+        .stSelectbox>div>div>div {
+            color: #000000 !important;
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 # --- Fonction principale ---
 def chatbot():
@@ -96,7 +97,7 @@ def support_technique():
     if choix == "Problèmes de livraison":
         st.write("📦 Contacte notre service de livraison au 00.00.00.00.00")
     elif choix == "Mode d'emploi des périphériques":
-        st.write("🛠️ Modes d'emploi : [BeyondTheSim - Guides](https://beyond-the-sim-website.vercel.app/#features)")
+        st.write("🛠️ Modes d'emploi : [BeyondTheSim - Guides]( https://beyond-the-sim-website.vercel.app/#features  )")
 
     return continuer()
 
@@ -104,7 +105,7 @@ def suivi_commande():
     st.subheader("Saisis ton numéro de commande 📦")
     numero = st.text_input("Numéro de commande :")
     if numero:
-        st.success(f"Ta commande `{numero}` est en cours de traitement.") 
+        st.success(f"Ta commande {numero} est en cours de traitement.")
     return continuer()
 
 def pass_proprietaire():
