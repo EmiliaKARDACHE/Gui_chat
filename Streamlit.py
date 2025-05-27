@@ -1,6 +1,10 @@
 import streamlit as st
 st.markdown("""
     <style>
+        body, .stApp {
+            background-color: white !important;
+        }
+
         h1, h2, h3, h4, h5, h6 {
             color: #c2185b !important;
         }
@@ -33,7 +37,6 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
-
 
 # --- Fonction principale ---
 def chatbot():
