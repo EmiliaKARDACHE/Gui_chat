@@ -1,8 +1,120 @@
+Calculateur de GES : 
+
+Un des projets les plus complets que j’ai réalisés s’intitule "Calculateur des émissions de GES en France".
+L’objectif était de concevoir une application permettant à un utilisateur de calculer ses émissions de gaz à effet de serre en fonction de son trajet (départ, arrivée) et du moyen de transport utilisé : voiture, deux-roues, avion ou train.
+
+Le projet comportait trois grands axes :
+
+L’analyse des émissions selon les types de transports.
+
+L’étude des différents types de particules de GES.
+
+Une analyse régionale et départementale des émissions, en croisant les données de résidence et de travail.
+
+Nous avons commencé par la collecte de données fiables, puis un important travail de nettoyage et de préparation des données (pandas, numpy…), afin de garantir des résultats cohérents.
+Ensuite, nous avons mené une analyse exploratoire, avec des visualisations pour bien comprendre les relations entre les variables et valider ou non certaines hypothèses.
+
+Enfin, nous avons développé une application interactive avec Streamlit, qui permettait à un utilisateur de simuler ses émissions GES selon son trajet et son mode de transport. L’application intégrait aussi une fenêtre vers nos études pour mieux comprendre le contexte.
+
+Ce projet m’a permis de travailler autant sur la collecte, le traitement, la visualisation, que sur le déploiement d’une solution utilisateur concrète. Il m’a aussi sensibilisée à la clarté des indicateurs, ce qui rejoint la mission de l’alternance que vous proposez.
 
 
-ipython==8.30.0
-numpy==2.1.3
-pandas==2.2.3
-plotly==5.24.1
-streamlit==1.41.1
-geopy==2.4.1
+Open food-facts : 
+j’ai travaillé sur un projet basé sur les données d’Open Food Facts, avec pour objectif de mettre en pratique le machine learning, et plus précisément le clustering non supervisé.
+C’était notre premier vrai projet dans ce domaine, et le dataset faisait près de 9 Go, donc il a fallu organiser le projet avec méthode.
+
+J’ai structuré le travail en trois grandes étapes :
+
+Prétraitement des données :
+J’ai réalisé un sous-échantillonnage pour alléger le dataset, puis j’ai appliqué un nettoyage rigoureux :
+
+suppression des colonnes inutiles,
+
+traitement des valeurs manquantes et aberrantes,
+
+encodage des variables catégorielles,
+
+normalisation des données.
+
+Analyse exploratoire :
+Pour mieux comprendre nos données, j’ai réalisé des visualisations univariées et multivariées, une étude des relations entre variables, ainsi qu’une réduction de dimension pour faciliter la suite.
+
+Clustering :
+J’ai entraîné deux modèles : K-Means et DBSCAN, en optimisant les paramètres pour segmenter les produits selon leurs caractéristiques. L’objectif était d’identifier des groupes logiques de produits similaires, en vue de futures analyses ou recommandations.
+
+Ce projet m’a appris à gérer un pipeline de machine learning complet, à manipuler de gros volumes de données, et à traduire les résultats en insights concrets.
+
+🌟 Ce que ça montre :
+Tu sais préparer, structurer, et segmenter des données complexes.
+
+Tu maîtrises des notions clés en data science : clustering, prétraitement, visualisation.
+
+Tu as pris des décisions techniques, ce qui est important en entreprise.
+
+
+
+Power BI : 
+j’ai réalisé un projet sur l’analyse des profils clients et de leurs comportements de voyage, en utilisant Power BI.
+J’avais à disposition un dataset contenant des informations sur les clients, leurs destinations, leurs dépenses annuelles, et quelques caractéristiques sociodémographiques.
+
+La première étape a été un nettoyage complet des données avec Power Query : correction de doublons, gestion des valeurs manquantes, et restructuration des colonnes pour faciliter l’analyse.
+
+Ensuite, j’ai travaillé sur :
+
+L’analyse des profils clients (habitudes de voyage, fréquence, panier moyen),
+
+La détection de corrélations entre certaines variables (type de client, destination, dépenses),
+
+Et des axes de conquête et de fidélisation, en identifiant des groupes à fort potentiel.
+
+J’ai construit plusieurs tableaux de bord interactifs, avec des filtres dynamiques, des KPI visuels, et des graphiques adaptés pour que l’utilisateur final puisse naviguer dans les données facilement et prendre des décisions marketing ou commerciales.
+
+Ce projet m’a permis de renforcer mes compétences en visualisation de données, mais aussi de mieux comprendre l’importance de la clarté des indicateurs et de la mise en forme des tableaux de bord selon les besoins utilisateurs.
+
+
+Entreprise : 
+je suis alternante chez Aylan Express (Une entreprise de transport et de livraison) on travaille principalement avec IKEA.
+Mon rôle principal est de travailler sur les données internes liées aux livraisons et aux tournées : je suis en charge de la collecte, du nettoyage et de la structuration de ces données.
+
+Ensuite, je réalise des analyses statistiques et visuelles, principalement avec Python (pandas, matplotlib, seaborn…) et avec Power BI, où je crée des tableaux de bord interactifs pour suivre les performances de l’entreprise.
+Ces dashboards permettent par exemple de suivre le nombre de livraisons par zone, le taux de retard, ou encore d’analyser les clients livrés / non livrés.
+
+À partir du mois de juin, je vais participer à un nouveau projet très important pour nous : la création d’une application interne de suivi des livraisons en temps réel, avec Power Apps.
+Ce sera ma première vraie utilisation de Power Apps, mais je suis très motivée à m’y investir, car je comprends bien les enjeux et j’ai déjà l’habitude de travailler entre les données et les utilisateurs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
